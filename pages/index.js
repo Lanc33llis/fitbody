@@ -75,7 +75,7 @@ export default function Home() {
           </div>
           <div className={styles.lifestyle}>
             <h2>
-              Got Asthma? Cold?
+              Got Asthma? Diabetes?
             </h2>
             <h3>
               Fitbody works around your lifestyle, so you can get the best workout
