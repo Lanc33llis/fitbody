@@ -20,8 +20,7 @@
   grid-column: 1 / 8;
   grid-row: 1 / 5;
   border: 1px solid black;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
+  border-radius: 0 50px 0 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,8 +28,12 @@
   padding: 0 2rem;
 }
 
-.hero-container .top-left h2 {
+.container h2 {
   color: rgb(35, 35, 35)
+}
+
+.container h3 {
+  color: rgb(55, 55, 55)
 }
 
 .hero-container .top-left > h1, .top-left > h2 {
@@ -81,7 +84,7 @@
   align-items: center;
 }
 
-.body-trainer-container {
+.personal-trainer-container {
   display: grid;
   grid-template-columns: repeat(12, 75px);
   grid-template-rows: repeat(6, 75px);
@@ -89,12 +92,154 @@
   margin: 25px
 }
 
-.body-trainer-container > div {
+.personal-trainer-container > div {
   border: 1px solid black;
+}
+
+.personal-trainer-container h2 {
+  margin: 5px 0
+}
+
+.personal-trainer-container h3 {
+  margin: 5px 0
 }
 
 .goals {
   padding: 0 2rem;
   grid-column: 1 / 6;
   grid-row: 1 / 4;
+  border-radius: 0 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  flex-direction: column;
+}
+
+.goals h2 {
+  font-size: 2rem;
+}
+
+div.specialized {
+  grid-column: 6 / 7;
+  grid-row: 1 / 7;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  background-color: var(--secondary);
+  border-radius: 0 0 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.sourced {
+  grid-column: 1 / 6;
+  grid-row: 4 / 6;
+  border-radius: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  flex-direction: column;
+}
+
+div.circle-1 {
+  grid-column: 1 / 2;
+  grid-row: 6;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--secondary);
+  border: none;
+}
+
+div.circle-2 {
+  grid-column: 2 / 3;
+  grid-row: 6;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  border: none;
+}
+
+div.circle-3 {
+  grid-column: 3 / 4;
+  grid-row: 6;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  border: none;
+}
+
+div.circle-4 {
+  grid-column: 4 / 5;
+  grid-row: 6;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  border: none;
+}
+
+.circle-5 {
+  grid-column: 5 / 6;
+  grid-row: 6;
+  border-radius: 50%;
+}
+
+.diet {
+  grid-column: 7 / 10;
+  grid-row: 2 / 4;
+  border-radius: 0 0 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  flex-direction: column;
+}
+
+.health {
+  grid-column: 10 / 13;
+  grid-row: 4 / 6;
+  border-radius: 0 50px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  flex-direction: column;
+}
+
+.lifestyle {
+  grid-column: 7 / 10;
+  grid-row: 4 / 7;
+  border-radius: 0 0 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  flex-direction: column;
+}
+
+div.minutes {
+  grid-column: 10 / 13;
+  grid-row: 1 / 4;
+  background-color: var(--secondary);
+  border-radius: 0 50px 0 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+div.bottom-right {
+  grid-column: 10 / 13;
+  grid-row: 6 / 7;
+  border-radius: 0 0 0 50px;
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.top {
+  grid-column: 7 / 10;
+  grid-row: 1;
 }
