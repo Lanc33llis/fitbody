@@ -1,0 +1,52 @@
+.container {
+  height: calc(100vh - 48px);
+  overflow-x: hidden;
+}
+
+.container h1 {
+  margin: 0px;
+  padding: 1rem;
+}
+
+.container form {
+  width: 400%;
+  display: flex;
+}
+
+.slide-1, .slide-2, .slide-3, .slide-4 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container form input {
+  width: 50%;
+}
+
+.buttons {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 48px);
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  padding: 15px;
+  margin: 0px 10px;
+  height: 50px;
+}
+
+.buttons div {
+  position: absolute;
+  bottom: 50px;
+}
+
+#form {
+  position: relative;
+  will-change: transform;
+  transition: transform 0.5s;
+}
